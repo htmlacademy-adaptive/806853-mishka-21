@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Ванюков](https://up.htmlacademy.ru/adaptive/21/user/806853).
-* Наставник: Андрей Пудов (https://htmlacademy.ru/profile/kamelot43).
+* Наставник: Андрей Пудов(https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
