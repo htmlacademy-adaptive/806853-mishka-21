@@ -3,6 +3,7 @@
 * Студент: [Денис Ванюков](https://up.htmlacademy.ru/adaptive/21/user/806853).
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Наставник: Андрей Пудов (https://htmlacademy.ru/profile/kamelot43).
 =======
 * Наставник: Андрей Пудов(https://htmlacademy.ru/profile/kamelot43).
@@ -10,6 +11,9 @@
 =======
 * Наставник: Андрей Пудов(https://htmlacademy.ru/profile/kamelot43).
 >>>>>>> 509161909f4f9670cec134bfc54c6f7ba36d76f0
+=======
+* Наставник: Андрей Пудов (https://htmlacademy.ru/profile/kamelot43).
+>>>>>>> 14e0cd31c1ee608f767dfe2aff64ee01bb252fa6
 
 ---
 
