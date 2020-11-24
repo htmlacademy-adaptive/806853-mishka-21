@@ -4,12 +4,14 @@
 
   list-style: none;
 }
+
 @mixin main-title {
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $text-color-black;
 }
+
 @mixin title {
   font-weight: bold;
   font-size: 25px;
@@ -20,8 +22,8 @@
 @mixin sub-title--aquamarine {
   font-weight: bold;
   font-size: 17px;
-  color: $text-color-aquamarine;
   line-height: 16px;
+  color: $text-color-aquamarine;
 }
 
 .visually-hidden:not(:focus):not(:active),

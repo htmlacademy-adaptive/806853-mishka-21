@@ -1,14 +1,21 @@
+// list
 .catalog-nav__list {
   @include list-reset;
 }
+
 .catalog-nav__item {
   &:nth-child(1) {
+
     background-color: $color-aquamarine;
   }
+
   &:nth-child(2) {
+
     background-color: $color-aquamarine-dark;
   }
 }
+
+// link
 .catalog-nav__link {
   display: flex;
   justify-content: space-between;
@@ -19,17 +26,20 @@
   line-height: 24px;
   color: $text-color-white;
   text-decoration: none;
+
   &::after {
     content: "";
 
     display: block;
   }
+
   &--interior::after {
     width: 40px;
     height: 62px;
 
     background-image: url("../img/catalog-nav/interior.svg");
   }
+
   &--toys::after {
     width: 60px;
     height: 60px;

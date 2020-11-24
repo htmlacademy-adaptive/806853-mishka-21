@@ -1,34 +1,44 @@
-
-// title
 .address {
   font-style: normal;
 }
+
+// title
 .address__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: $text-color-black;
 }
+
+// item
 .address__item {
   font-size: 14px;
   line-height: 30px;
   color: $text-color-black-light;
 }
+
+// definition
 .address__definition {
   margin: 0;
 }
+
+// link
 .address__link {
   position: relative;
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+
   &--mail {
     text-decoration-color: $color-aquamarine;
   }
+
   &--location {
     text-decoration: none;
   }
 }
+
+// icon
 .address__icon {
   position: absolute;
   display: block;
@@ -37,12 +47,17 @@
 
   background-image: url("../img/map/map-pin.svg");
 }
+
+// img
 .address__img {
   background-color: $color-pattern;
 }
+
+// button
 .address__button {
   width: 100%;
   height: 52px;
+
   @media (min-width: $mobile-width) {
     width: 292px;
   }

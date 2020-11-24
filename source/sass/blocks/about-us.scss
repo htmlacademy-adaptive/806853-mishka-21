@@ -2,10 +2,12 @@
 .about-us__title {
   @include title();
 }
+
 // list
 .about-us__list {
   @include list-reset;
 }
+
 // item
 .about-us__item {
   &::before {
@@ -15,52 +17,51 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-
   }
+
   &--ecology::before {
     width: 33px;
     height: 38px;
 
     background-image: url("../img/about-us/icon-ecology.svg");
-
   }
+
   &--price::before {
     width: 47px;
     height: 27px;
 
     background-image: url("../img/about-us/icon-price.svg");
-
-
   }
+
   &--like::before {
     width: 34px;
     height: 27px;
 
     background-image: url("../img/about-us/icon-like.svg");
-
   }
+
   &--clew::before {
     width: 35px;
     height: 34px;
 
     background-image: url("../img/about-us/icon-clew.svg");
-
   }
+
   &--rocket::before {
     width: 55px;
     height: 23px;
 
     background-image: url("../img/about-us/icon-rocket.svg");
-
   }
+
   &--gift::before {
     width: 33px;
     height: 32px;
 
     background-image: url("../img/about-us/icon-gift.svg");
-
   }
 }
+
 // text
 .about-us__text {
   font-weight: bold;

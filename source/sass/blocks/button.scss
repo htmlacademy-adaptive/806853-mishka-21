@@ -11,13 +11,14 @@
   text-decoration: none;
 
   border: 2px solid $text-color-black-light;
-}
 
-.button--submit {
-  font-size: 17px;
-  line-height: 16px;
-  color: $text-color-white;
+  &--submit {
 
-  background-color: $color-aquamarine;
-  border: none;
+    font-size: 17px;
+    line-height: 16px;
+    color: $text-color-white;
+
+    background-color: $color-aquamarine;
+    border: none;
+  }
 }
