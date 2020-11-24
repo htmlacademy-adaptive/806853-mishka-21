@@ -1,0 +1,49 @@
+
+// title
+.address {
+  font-style: normal;
+}
+.address__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color-black;
+}
+.address__item {
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color-black-light;
+}
+.address__definition {
+  margin: 0;
+}
+.address__link {
+  position: relative;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  &--mail {
+    text-decoration-color: $color-aquamarine;
+  }
+  &--location {
+    text-decoration: none;
+  }
+}
+.address__icon {
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 100px;
+
+  background-image: url("../img/map/map-pin.svg");
+}
+.address__img {
+  background-color: $color-pattern;
+}
+.address__button {
+  width: 100%;
+  height: 52px;
+  @media (min-width: $mobile-width) {
+    width: 292px;
+  }
+}

@@ -6,6 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
+.csscomb.json
 node_modules/
 npm-debug.*
 source/css/*.css

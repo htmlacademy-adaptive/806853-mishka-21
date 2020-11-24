@@ -1,0 +1,46 @@
+// title
+.product__title {
+  @include title();
+  @media ( max-width: $tablet-width) {
+    margin: 0;
+  }
+}
+// dat
+.product__day {
+  @include sub-title--aquamarine();
+  @media ( max-width: $tablet-width) {
+    margin: 0;
+
+    line-height: 20px;
+  }
+}
+// desription
+.product__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color-black-light;
+}
+// item
+.product__item {
+  display: grid;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $text-color-black-light;
+
+  grid-template-columns: 1fr 2fr;
+}
+// defenition
+.product__definition {
+  margin: 0;
+}
+.product__img {
+  background-color: $color-grey;
+}
+
+.product__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-color-black-light;
+}
