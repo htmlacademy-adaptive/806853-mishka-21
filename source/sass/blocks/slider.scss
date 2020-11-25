@@ -1,0 +1,42 @@
+// list
+.slider__list {
+  @include list-reset();
+}
+
+// text
+.slider__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text-color-black-light;
+}
+
+// name
+.slider__name {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text-color-black;
+}
+
+// instagram
+.slider__instagram {
+  font-size: 17px;
+  line-height: 30px;
+  color: $text-color-black-light;
+  text-decoration: none;
+}
+
+// button
+.slider__button {
+  background-color: initial;
+  border: 1px solid $color-grey-light;
+}
+
+.reviews__button {
+  width: 100%;
+  height: 52px;
+
+  @media (min-width: $mobile-width) {
+    width: 292px;
+  }
+}
