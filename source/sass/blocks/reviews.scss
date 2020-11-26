@@ -2,3 +2,13 @@
 .reviews__title {
   @include title();
 }
+
+// button
+.reviews__button {
+  width: 100%;
+  height: 52px;
+
+  @media (min-width: $mobile-width) {
+    width: 292px;
+  }
+}
