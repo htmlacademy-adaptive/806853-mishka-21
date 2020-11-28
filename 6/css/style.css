@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../source/fonts/opensans.woff2") format("woff2"), url("../source/fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../source/fonts/opensansbold.woff2") format("woff2"), url("../source/fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
 
 .page-main__wrapper {
   width: 100%;
-  height: 373px;
+  min-height: 373px;
   background-color: #f1f1f1; }
 
 .page-main__title {
@@ -234,9 +234,6 @@ input[type="radio"].visually-hidden {
 .reviews__button {
   width: 100%;
   height: 52px; }
-  @media (min-width: 768px) {
-    .reviews__button {
-      width: 292px; } }
 
 .slider__list {
   margin: 0;
@@ -448,7 +445,9 @@ input[type="radio"].visually-hidden {
 
 .form__full-name {
   padding: 10px;
-  padding-left: 0;
+  padding-left: 18px;
+  font-size: 19px;
+  line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000; }
   .form__full-name::-moz-placeholder {
@@ -463,8 +462,12 @@ input[type="radio"].visually-hidden {
     opacity: 0.3; }
 
 .form__contact {
+  width: 100%;
   padding: 10px;
-  padding-left: 0;
+  padding-left: 18px;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
   border: none;
   border-bottom: 2px solid #000000; }
   .form__contact::-moz-placeholder {
@@ -479,16 +482,19 @@ input[type="radio"].visually-hidden {
     opacity: 0.3; }
 
 .form__textarea {
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 19px;
+  line-height: 18px;
   border: 2px solid #000000;
   resize: none; }
   .form__textarea::-moz-placeholder {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: #000000;
     opacity: 0.3; }
   .form__textarea::placeholder {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: #000000;
     opacity: 0.3; }

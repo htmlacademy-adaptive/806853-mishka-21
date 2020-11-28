@@ -10,19 +10,32 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__link" href=""><img class="page-header__logo" src=""
-        alt="Логотип магазина вязанных вещей 'Мишка'"></a>
+    <a class="page-header__logo" href="">
+      <img src="img/logo/logo-mobile.svg" width="86" height="35" alt="Логотип магазина вязанных вещей 'Мишка'">
+    </a>
     <button class="page-header__burger burger" type="button">
       <span class="visually-hidden">Открытие и закрытие навигационного меню</span>
     </button>
-    <nav class="page-header__nav-services nav-services">
-      <ul class="nav-services__list">
-        <li class="nav-services__item"><a class="nav-services__link" href="">Каталог товаров</a></li>
-        <li class="nav-services__item"><a class="nav-services__link" href="">Вязание на заказ</a></li>
-        <li class="nav-services__item"><a class="nav-services__link" href="">Новые поступления</a></li>
-        <li class="nav-services__item"><a class="nav-services__link" href="">Распродажа</a></li>
-        <li class="nav-services__item"><a class="nav-services__link" href="">Поиск по сайту</a></li>
-        <li class="nav-services__item"><a class="nav-services__link" href="">Корзина: пока пуста</a></li>
+    <nav class="page-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Новые поступления</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Распродажа</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Поиск по сайту</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Корзина: пока пуста</a>
+        </li>
       </ul>
     </nav>
     <p class="page-header__text">Бесплатная доставка по России</p>
@@ -52,27 +65,27 @@
         <legend class="form__legend">Цвет</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--1" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--1" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--1" checked>Белый</label>
           </li>
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--2" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--2" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--2" checked>Серый</label>
           </li>
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--3" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--3" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--3">«Тиффани»</label>
           </li>
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--4" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--4" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--4">Черный</label>
           </li>
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--5" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--5" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--5">Розовый</label>
           </li>
           <li class="form__item">
-            <input class="form__checkbox visually-hidden" id="form__checkbox--6" type="checkbox">
+            <input class="form__checkbox visually-hidden" id="form__checkbox--6" name="color" type="checkbox">
             <label class="form__label form__label--checkbox" for="form__checkbox--6">Оранжевый</label>
           </li>
         </ul>
