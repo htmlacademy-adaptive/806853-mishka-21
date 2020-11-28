@@ -27,10 +27,8 @@
 .form__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include list-reset();
 }
 
 // item
@@ -153,7 +151,10 @@
 // full-name
 .form__full-name {
   padding: 10px;
-  padding-left: 0;
+  padding-left: 18px;
+
+  font-size: 19px;
+  line-height: 18px;
 
   border: none;
   border-bottom: 2px solid $color-black;
@@ -169,8 +170,13 @@
 
 // contact
 .form__contact {
+  width: 100%;
   padding: 10px;
-  padding-left: 0;
+  padding-left: 18px;
+
+  font-size: 19px;
+  line-height: 18px;
+  color: $text-color-black-light;
 
   border: none;
   border-bottom: 2px solid $color-black;
@@ -186,14 +192,18 @@
 
 // texarea
 .form__textarea {
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
+
+  font-size: 19px;
+  line-height: 18px;
 
   border: 2px solid $color-black;
 
   resize: none;
 
   &::placeholder {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: $text-color-black;
 
