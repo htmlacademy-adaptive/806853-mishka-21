@@ -10,10 +10,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  background-color: inherit;
   border: 2px solid $text-color-black-light;
 
   &--submit {
-
     font-size: 17px;
     line-height: 16px;
     color: $text-color-white;

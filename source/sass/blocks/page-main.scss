@@ -1,6 +1,20 @@
+// wrapper
+.page-main {
+  position: relative;
+}
+
+// wrapper
+.page-main__wrapper {
+  width: 100%;
+  min-height: 373px;
+
+  background-color: $color-grey;
+}
+
 // title
 .page-main__title {
-  height: 373px;
+  position: relative;
+  z-index: 1;
 
   @include main-title();
 }
@@ -8,10 +22,6 @@
 // img
 .page-main__img {
   position: absolute;
-  z-index: -1;
 
   width: 320px;
-  height: 373px;
-
-  background-color: $color-grey;
 }
