@@ -1,0 +1,30 @@
+// img
+.article__img {
+  width: 260px;
+  height: 150px;
+}
+
+// play button
+.article__play-button {
+  background-color: initial;
+  border: none;
+}
+
+// title
+.article__title a {
+  text-decoration: none;
+
+  @include sub-title();
+}
+
+// text
+.article__text {
+  font-size: 13px;
+  line-height: 30px;
+  color: $text-color-black-light;
+}
+
+// button
+.article__button {
+  width: 192px;
+}

@@ -19,6 +19,13 @@
   color: $text-color-black;
 }
 
+@mixin sub-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-color-black;
+}
+
 @mixin sub-title-aquamarine {
   font-weight: bold;
   font-size: 17px;
