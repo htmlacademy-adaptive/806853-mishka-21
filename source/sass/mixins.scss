@@ -10,6 +10,16 @@
   font-size: 27px;
   line-height: 30px;
   color: $text-color-black;
+
+  @media (min-width: $mobile-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 @mixin title {
@@ -17,6 +27,16 @@
   font-size: 25px;
   line-height: 30px;
   color: $text-color-black;
+
+  @media (min-width: $mobile-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 @mixin sub-title-aquamarine {
@@ -43,4 +63,14 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+@mixin padding-center {
+  padding-left: calc(50% - 334px);
+  padding-right: calc(50% - 334px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: calc(50% - 525px);
+    padding-right: calc(50% - 525px);
+  }
 }

@@ -1,4 +1,17 @@
 .burger {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: inherit;
+  background-image: url("../img/svg/menu-close.svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
   @media (min-width: $mobile-width) {
     display: none;
   }

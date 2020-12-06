@@ -1,3 +1,26 @@
+// footer
 .page-footer {
   background-color: $color-grey;
+}
+
+// wrapper
+.page-footer__wrapper {
+  @media (min-width: $mobile-width) {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: max-content 1fr max-content;
+  }
+}
+
+// img
+.page-footer__logo {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+// copyright
+.page-footer__copyright {
+  justify-self: end;
 }

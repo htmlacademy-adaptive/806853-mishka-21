@@ -1,5 +1,13 @@
 .address {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 185px repeat(2, 1fr);
+  }
 }
 
 // title
@@ -8,13 +16,60 @@
   font-size: 18px;
   line-height: 30px;
   color: $text-color-black;
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include title();
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/svg/flag.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+
+    grid-column: 2 / 3;
+
+    &::after {
+      position: absolute;
+      left: 50px;
+    }
+  }
+}
+
+// list
+.address__list {
+  @media (min-width: $mobile-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-template-columns: 1fr;
+  }
 }
 
 // item
 .address__item {
+  display: grid;
+
   font-size: 14px;
   line-height: 30px;
   color: $text-color-black-light;
+
+  grid-template-columns: 1fr 2fr;
 }
 
 // definition
@@ -25,22 +80,29 @@
 // link
 .address__link {
   position: relative;
+
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+  text-decoration: none;
 
   &--mail {
-    text-decoration-color: $color-aquamarine;
+    border-bottom: 1px solid $color-aquamarine;
   }
+}
 
-  &--location {
-    text-decoration: none;
+// map
+.address__map {
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / span 3;
   }
 }
 
 // icon
 .address__icon {
   position: absolute;
+
   display: block;
   width: 67px;
   height: 100px;
@@ -50,6 +112,8 @@
 
 // img
 .address__img {
+  margin-bottom: 40px;
+
   background-color: $color-pattern;
 }
 
@@ -60,5 +124,12 @@
 
   @media (min-width: $mobile-width) {
     width: 292px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    grid-column: 2 / 3;
   }
 }
