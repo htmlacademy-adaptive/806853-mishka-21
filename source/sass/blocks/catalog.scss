@@ -1,0 +1,39 @@
+// list
+.catalog__list {
+  @include list-reset();
+}
+
+// item
+.catalog__item {
+  border-bottom: 1px solid $color-grey-light;
+}
+
+// img
+.catalog__img {
+  width: 260px;
+  height: 195px;
+}
+
+// name
+.catalog__name a {
+  text-decoration: none;
+
+  @include sub-title();
+}
+
+// feature
+.catalog__feature {
+  font-size: 13px;
+  line-height: 30px;
+  color: $text-color-black-light;
+
+  border-bottom: 1px solid $color-grey-light;
+}
+
+// price
+.catalog__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color-black;
+}
