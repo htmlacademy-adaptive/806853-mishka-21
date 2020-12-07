@@ -1,11 +1,11 @@
 // nav
 .catalog-nav {
-  @include padding-center();
-
   @media (min-width: $mobile-width) {
     position: relative;
 
     background-color: $color-grey-background;
+
+    @include padding-center();
 
     &::after {
       content: "";
@@ -53,6 +53,8 @@
   align-items: center;
   min-height: 103px;
   padding: 0 36px;
+  padding-left: calc(50% - 130px);
+  padding-right: calc(50% - 130px);
 
   font-weight: bold;
   font-size: 19px;
