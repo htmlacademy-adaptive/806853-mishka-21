@@ -142,7 +142,7 @@ input[type="radio"].visually-hidden {
   @media (min-width: 768px) {
     .page-header__text {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       align-self: center;
       width: 100%;
