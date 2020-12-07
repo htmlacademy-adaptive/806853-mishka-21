@@ -1028,4 +1028,58 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   color: #444444; }
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  border-bottom: 1px solid #ececec; }
+
+.catalog__img {
+  width: 260px;
+  height: 195px; }
+
+.catalog__name a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000; }
+
+.catalog__feature {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+  border-bottom: 1px solid #ececec; }
+
+.catalog__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000; }
+
+.article__img {
+  width: 260px;
+  height: 150px; }
+
+.article__play-button {
+  background-color: initial;
+  border: none; }
+
+.article__title a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000; }
+
+.article__text {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444; }
+
+.article__button {
+  width: 192px; }
+
 /*# sourceMappingURL=style.css.map */
