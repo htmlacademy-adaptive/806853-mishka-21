@@ -78,7 +78,7 @@
 
   @media (min-width: $mobile-width) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-self: center;
     width: 100%;
