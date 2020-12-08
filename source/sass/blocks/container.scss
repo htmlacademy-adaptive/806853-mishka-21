@@ -1,15 +1,17 @@
 .container {
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  padding-left: calc(50% - 160px);
+  padding-right: calc(50% - 160px);
 
   @media (min-width: $mobile-width) {
-    width: 668px;
+    width: 768px;
     padding: 0 50px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 1050px;
+    width: 1150px;
     padding: 0 50px;
   }
 }

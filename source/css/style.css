@@ -25,17 +25,22 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%); }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .container {
-  width: 320px;
   margin: 0 auto;
-  padding: 0 30px; }
+  padding: 0 30px;
+  padding-left: calc(50% - 160px);
+  padding-right: calc(50% - 160px); }
   @media (min-width: 768px) {
     .container {
-      width: 668px;
+      width: 768px;
       padding: 0 50px; } }
   @media (min-width: 1150px) {
     .container {
-      width: 1050px;
+      width: 1150px;
       padding: 0 50px; } }
 
 .button {
@@ -68,7 +73,7 @@ input[type="radio"].visually-hidden {
 .burger {
   position: absolute;
   top: 15px;
-  right: calc(50% - 160px);
+  right: 40px;
   width: 30px;
   height: 30px;
   background-color: inherit;
