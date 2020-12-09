@@ -534,12 +534,13 @@ img {
       grid-column: 2; } }
 
 .about-us__list {
+  display: grid;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  row-gap: 30px; }
   @media (min-width: 768px) {
     .about-us__list {
-      display: grid;
       -moz-column-gap: 58px;
            column-gap: 58px;
       grid-auto-flow: column;
@@ -549,8 +550,7 @@ img {
       grid-column: 2 / -1; } }
 
 .about-us__item {
-  flex-basis: 50%;
-  margin-bottom: 40px; }
+  flex-basis: 50%; }
   .about-us__item::before {
     content: "";
     display: block;

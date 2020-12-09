@@ -18,12 +18,13 @@
 
 // list
 .about-us__list {
+  display: grid;
+
   @include list-reset;
+  row-gap: 30px;
 
   @media (min-width: $mobile-width) {
-    display: grid;
     // grid-template-columns: ;
-
     column-gap: 58px;
 
     grid-auto-flow: column;
@@ -38,7 +39,7 @@
 // item
 .about-us__item {
   flex-basis: 50%;
-  margin-bottom: 40px;
+
 
   &::before {
     content: "";
