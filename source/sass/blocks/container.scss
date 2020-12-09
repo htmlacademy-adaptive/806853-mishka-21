@@ -1,9 +1,7 @@
 .container {
-  // width: 320px;
+  width: 260px;
   margin: 0 auto;
   padding: 0 30px;
-  padding-left: calc(50% - 160px);
-  padding-right: calc(50% - 160px);
 
   @media (min-width: $mobile-width) {
     width: 768px;

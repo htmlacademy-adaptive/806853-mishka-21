@@ -30,10 +30,9 @@ img {
   height: auto; }
 
 .container {
+  width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
-  padding-left: calc(50% - 160px);
-  padding-right: calc(50% - 160px); }
+  padding: 0 30px; }
   @media (min-width: 768px) {
     .container {
       width: 768px;
@@ -93,12 +92,12 @@ img {
       background: linear-gradient(0deg, #f9f9f9 50%, #ffffff 50%);
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      padding-left: calc(50% - 334px);
-      padding-right: calc(50% - 334px); } }
+      padding-left: calc(50% - 384px);
+      padding-right: calc(50% - 384px); } }
   @media (min-width: 768px) and (min-width: 1150px) {
     .page-header {
-      padding-left: calc(50% - 525px);
-      padding-right: calc(50% - 525px); } }
+      padding-left: calc(50% - 575px);
+      padding-right: calc(50% - 575px); } }
   @media (min-width: 768px) {
       .page-header::before {
         content: "";
@@ -312,12 +311,12 @@ img {
   .catalog-nav {
     position: relative;
     background-color: #f9f9f9;
-    padding-left: calc(50% - 334px);
-    padding-right: calc(50% - 334px); } }
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px); } }
   @media (min-width: 768px) and (min-width: 1150px) {
     .catalog-nav {
-      padding-left: calc(50% - 525px);
-      padding-right: calc(50% - 525px); } }
+      padding-left: calc(50% - 575px);
+      padding-right: calc(50% - 575px); } }
 
 @media (min-width: 768px) {
     .catalog-nav::after {
@@ -353,8 +352,8 @@ img {
   align-items: center;
   min-height: 103px;
   padding: 0 36px;
-  padding-left: calc(50% - 160px);
-  padding-right: calc(50% - 160px);
+  padding-left: calc(50% - 130px);
+  padding-right: calc(50% - 130px);
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -432,7 +431,7 @@ img {
       justify-self: end; } }
   @media (min-width: 1150px) {
     .product__day {
-      margin-right: 58px;
+      margin: 0;
       grid-column: 1 / 1;
       justify-self: center; } }
 
@@ -588,36 +587,34 @@ img {
   line-height: 20px;
   color: #000000; }
 
-@media (min-width: 768px) {
-  .reviews {
-    position: relative;
-    display: grid;
-    min-height: 457px;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: calc(50% - 334px);
-    padding-right: calc(50% - 334px); } }
-  @media (min-width: 768px) and (min-width: 1150px) {
+.reviews {
+  padding-left: calc(50% - 384px);
+  padding-right: calc(50% - 384px); }
+  @media (min-width: 1150px) {
     .reviews {
-      padding-left: calc(50% - 525px);
-      padding-right: calc(50% - 525px); } }
-
-@media (min-width: 768px) {
-    .reviews::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background-image: url("../img/review/review.jpg");
-      background-repeat: no-repeat; } }
+      padding-left: calc(50% - 575px);
+      padding-right: calc(50% - 575px); } }
+  @media (min-width: 768px) {
+    .reviews {
+      position: relative;
+      display: grid;
+      min-height: 457px;
+      grid-template-columns: repeat(2, 1fr); }
+      .reviews::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/review/review.jpg");
+        background-repeat: no-repeat; } }
     @media (min-width: 768px) and (min-width: 1150px) {
       .reviews::before {
         background-position: calc(50% - 350px); } }
-
-@media (min-width: 1150px) {
-  .reviews {
-    display: grid;
-    grid-template-columns: 185px repeat(2, 1fr); } }
+  @media (min-width: 1150px) {
+    .reviews {
+      display: grid;
+      grid-template-columns: 185px repeat(2, 1fr); } }
 
 .reviews__title {
   font-weight: bold;
@@ -648,7 +645,7 @@ img {
       height: 52px;
       grid-column: 2;
       grid-row: 1;
-      justify-self: center; } }
+      justify-self: end; } }
   @media (min-width: 1150px) {
     .reviews__button {
       grid-column: 3; } }
@@ -743,7 +740,7 @@ img {
       grid-column: 2 / 3; }
       .address__title::after {
         position: absolute;
-        left: 50px; } }
+        left: 100px; } }
 
 @media (min-width: 768px) {
   .address__list {

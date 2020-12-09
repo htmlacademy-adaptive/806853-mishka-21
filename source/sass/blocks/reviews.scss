@@ -1,5 +1,7 @@
 // reviews
 .reviews {
+  @include padding-center();
+
   @media (min-width: $mobile-width) {
     position: relative;
 
@@ -7,8 +9,6 @@
     min-height: 457px;
 
     grid-template-columns: repeat(2, 1fr);
-
-    @include padding-center();
 
     &::before {
       content: "";
@@ -58,7 +58,7 @@
 
     grid-column: 2;
     grid-row: 1;
-    justify-self: center;
+    justify-self: end;
   }
 
   @media (min-width: $tablet-width) {

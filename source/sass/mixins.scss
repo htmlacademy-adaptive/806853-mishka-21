@@ -73,11 +73,11 @@ input[type="radio"].visually-hidden {
 }
 
 @mixin padding-center {
-  padding-left: calc(50% - 334px);
-  padding-right: calc(50% - 334px);
+  padding-left: calc(50% - 384px);
+  padding-right: calc(50% - 384px);
 
   @media (min-width: $tablet-width) {
-    padding-left: calc(50% - 525px);
-    padding-right: calc(50% - 525px);
+    padding-left: calc(50% - 575px);
+    padding-right: calc(50% - 575px);
   }
 }
