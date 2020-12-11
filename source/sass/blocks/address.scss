@@ -6,7 +6,20 @@
 
     display: grid;
 
-    grid-template-columns: 185px repeat(2, 1fr);
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content min-content;
+
+    @include padding-center;
+  }
+}
+
+// wrapper
+.address__wrapper {
+  grid-column: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 185px;
   }
 }
 
@@ -42,7 +55,7 @@
 
     &::after {
       position: absolute;
-      left: 100px;
+      left: calc(50% - 460px);
     }
   }
 }
@@ -94,8 +107,8 @@
 // map
 .address__map {
   @media (min-width: $tablet-width) {
-    grid-column: 3 / -1;
-    grid-row: 1 / span 3;
+    grid-column: 2 / -1;
+    grid-row: span 2;
   }
 }
 
@@ -112,15 +125,23 @@
 
 // img
 .address__img {
+  width: 100%;
   margin-bottom: 40px;
 
   background-color: $color-pattern;
+
+  @media (min-width: $tablet-width) {
+    width: 527px;
+    height: 457px;
+    margin: 0;
+  }
 }
 
 // button
 .address__button {
-  width: 100%;
+  max-width: 260px;
   height: 52px;
+  margin: 0 auto;
 
   @media (min-width: $mobile-width) {
     width: 292px;
@@ -128,8 +149,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    align-self: center;
     margin: 0;
 
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    justify-self: center;
   }
 }

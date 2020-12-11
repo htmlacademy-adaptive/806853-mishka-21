@@ -1,6 +1,12 @@
 // reviews
 .reviews {
-  @include padding-center();
+  // @include padding-center();
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+
+    @include padding-center();
+  }
 
   @media (min-width: $mobile-width) {
     position: relative;
@@ -20,6 +26,9 @@
 
       background-image: url("../img/review/review.jpg");
       background-repeat: no-repeat;
+      left: 0;
+      top: 0;
+
 
       @media (min-width: $tablet-width) {
         background-position: calc(50% - 350px);
