@@ -5,6 +5,8 @@
 
 // wrapper
 .page-footer__wrapper {
+  @include container;
+
   @media (min-width: $mobile-width) {
     display: grid;
     align-items: center;

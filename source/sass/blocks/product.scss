@@ -1,5 +1,7 @@
 // product
 .product {
+  @include container;
+
   @media (min-width: $mobile-width) {
     display: grid;
 
@@ -29,6 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    align-self: center;
     grid-column: 2 / -1;
   }
 }

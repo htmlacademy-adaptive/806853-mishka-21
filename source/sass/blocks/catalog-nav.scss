@@ -1,31 +1,30 @@
 // nav
 .catalog-nav {
-  @media (min-width: $mobile-width) {
-    position: relative;
+  position: relative;
 
-    background-color: $color-grey-background;
+  background-color: $color-grey-background;
+}
 
-    @include padding-center();
+// wrapper
+.catalog-nav__wrapper {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
+  width: 100%;
+  height: 24px;
 
-      width: 100%;
-      height: 24px;
-
-      background-image: url("../img/svg/zigzag-fill-desktop.svg");
-      background-repeat: repeat-x;
-      background-position: 0 5px;
-    }
-  }
+  background-image: url("../img/svg/zigzag-fill-desktop.svg");
+  background-repeat: repeat-x;
+  background-position: 0 0;
 }
 
 // list
 .catalog-nav__list {
+  background-color: $color-grey-background;
+
   @include list-reset;
+  @include container;
 
   @media (min-width: $mobile-width) {
     position: relative;
@@ -53,8 +52,6 @@
   align-items: center;
   min-height: 103px;
   padding: 0 36px;
-  padding-left: calc(50% - 130px);
-  padding-right: calc(50% - 130px);
 
   font-weight: bold;
   font-size: 19px;

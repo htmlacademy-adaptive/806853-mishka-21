@@ -1,5 +1,7 @@
 // about-us
 .about-us {
+  @include container;
+
   @media (min-width: $tablet-width) {
     display: grid;
 

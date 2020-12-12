@@ -1,16 +1,8 @@
-
 .page-header {
-  position: relative;
-
   @media (min-width: $mobile-width) {
-    display: grid;
+    position: relative;
 
     background: linear-gradient(0deg, $color-grey-background 50%, $-color-white-background 50%);
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    @include padding-center();
 
     &::before {
       content: "";
@@ -23,6 +15,18 @@
 
       background-color: $color-grey;
     }
+  }
+}
+
+// wrapper
+.page-header__wrapper {
+  @media (min-width: $mobile-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @include container;
   }
 
   @media (min-width: $tablet-width) {
