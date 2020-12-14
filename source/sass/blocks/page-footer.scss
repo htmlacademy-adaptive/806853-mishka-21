@@ -1,3 +1,28 @@
+// footer
 .page-footer {
   background-color: $color-grey;
+}
+
+// wrapper
+.page-footer__wrapper {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: max-content 1fr max-content;
+  }
+}
+
+// img
+.page-footer__logo {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+// copyright
+.page-footer__copyright {
+  justify-self: end;
 }

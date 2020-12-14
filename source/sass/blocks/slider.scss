@@ -1,3 +1,8 @@
+// slider
+.slider {
+  position: relative;
+}
+
 // list
 .slider__list {
   @include list-reset();
@@ -26,8 +31,22 @@
   text-decoration: none;
 }
 
+// wrapper button
+.slider__wrapper-button {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+  }
+}
+
 // button
 .slider__button {
+  width: 100%;
+
   background-color: initial;
   border: 1px solid $color-grey-light;
 }

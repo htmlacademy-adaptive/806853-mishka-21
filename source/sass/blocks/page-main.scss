@@ -1,20 +1,27 @@
 // wrapper
 .page-main {
   position: relative;
+
+  padding-bottom: 40px;
 }
 
 // wrapper
 .page-main__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 373px;
 
-  background-color: $color-grey;
+  background-color: $color-grey-background;
 }
 
 // title
 .page-main__title {
   position: relative;
   z-index: 1;
+
+  text-align: center;
 
   @include main-title();
 }
@@ -24,4 +31,14 @@
   position: absolute;
 
   width: 320px;
+}
+
+// nav
+.page-main__nav {
+  margin-bottom: 30px;
+}
+
+// reviews
+.page-main__reviews {
+  margin-bottom: 40px;
 }

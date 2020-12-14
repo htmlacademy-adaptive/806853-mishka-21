@@ -1,15 +1,49 @@
+// about-us
+.about-us {
+  @include container;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-template-columns: 185px repeat(2, 1fr);
+  }
+}
+
 // title
 .about-us__title {
   @include title();
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 // list
 .about-us__list {
   @include list-reset;
+
+  display: grid;
+
+  row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    // grid-template-columns: ;
+    column-gap: 58px;
+
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
 }
 
 // item
 .about-us__item {
+  flex-basis: 50%;
+
+
   &::before {
     content: "";
 

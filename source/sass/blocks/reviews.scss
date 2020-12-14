@@ -1,10 +1,73 @@
+// reviews
+.reviews {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/review/review.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: calc(50% - 350px);
+  }
+}
+
+.reviews__wrapper {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: grid;
+    min-height: 457px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-template-columns: 185px repeat(2, 1fr);
+  }
+}
+
 // title
 .reviews__title {
   @include title();
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 // button
 .reviews__button {
   width: 100%;
-  height: 52px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    width: 175px;
+    height: 52px;
+
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+  }
+}
+
+// slider
+.reviews__slider {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
 }
