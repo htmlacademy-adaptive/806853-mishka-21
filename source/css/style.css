@@ -104,12 +104,12 @@ img {
 
 @media (min-width: 768px) {
   .page-header__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     width: 320px;
     margin: 0 auto;
-    padding: 0 30px; } }
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
   @media (min-width: 768px) and (min-width: 768px) {
     .page-header__wrapper {
       width: 768px;
@@ -340,7 +340,7 @@ img {
   height: 24px;
   background-image: url("../img/svg/zigzag-fill-desktop.svg");
   background-repeat: repeat-x;
-  background-position: 0 0px; }
+  background-position: 0 0; }
 
 .catalog-nav__list {
   background-color: #f9f9f9;
@@ -396,7 +396,18 @@ img {
 .product {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 30px; }
+  @media (min-width: 768px) {
+    .product {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .product {
+      width: 1150px;
+      padding: 0 50px; } }
   @media (min-width: 768px) {
     .product {
       width: 768px;
@@ -534,7 +545,7 @@ img {
       grid-column: 2 / 2; } }
 
 .product__button {
-  height: 52px; }
+  min-height: 52px; }
   @media (min-width: 768px) {
     .product__button {
       width: 292px;
@@ -580,10 +591,10 @@ img {
       grid-column: 2; } }
 
 .about-us__list {
-  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
   row-gap: 30px; }
   @media (min-width: 768px) {
     .about-us__list {
@@ -769,10 +780,10 @@ img {
       padding: 0 50px; } }
 
 .address__wrapper {
-  grid-column: 1;
   width: 320px;
   margin: 0 auto;
-  padding: 0 30px; }
+  padding: 0 30px;
+  grid-column: 1; }
   @media (min-width: 768px) {
     .address__wrapper {
       width: 768px;
@@ -793,13 +804,13 @@ img {
   color: #000000; }
   @media (min-width: 768px) {
     .address__title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-weight: bold;
       font-size: 25px;
       line-height: 30px;
-      color: #000000; } }
+      color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
   @media (min-width: 768px) and (min-width: 768px) {
     .address__title {
       font-size: 43px;

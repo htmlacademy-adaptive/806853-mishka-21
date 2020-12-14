@@ -26,7 +26,7 @@
   @include list-reset;
   @include container;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     display: grid;

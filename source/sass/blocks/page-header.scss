@@ -1,8 +1,8 @@
 .page-header {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
-    background: linear-gradient(0deg, $color-grey-background 50%, $-color-white-background 50%);
+    background: linear-gradient(0deg, $color-grey-background 50%, $color-white-background 50%);
 
     &::before {
       content: "";
@@ -20,16 +20,16 @@
 
 // wrapper
 .page-header__wrapper {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
+    @include container;
+
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
-    @include container;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -40,7 +40,7 @@
   justify-content: center;
   padding: 10px 0;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     align-self: center;
 
     grid-column: 1 / 1;
@@ -48,7 +48,7 @@
     justify-self: start;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: -2px;
 
     grid-column: 2 / 3;
@@ -58,7 +58,7 @@
 
 // nav
 .page-header__nav {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
   }
@@ -76,11 +76,11 @@
   line-height: 24px;
   color: $text-color-black-light;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +95,7 @@
     justify-self: end;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: flex-end;
     padding-right: 30px;
 

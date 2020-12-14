@@ -1,7 +1,7 @@
 .address {
   font-style: normal;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     @include container;
 
     position: relative;
@@ -15,11 +15,11 @@
 
 // wrapper
 .address__wrapper {
-  grid-column: 1;
-
   @include container;
 
-  @media (min-width: $tablet-width) {
+  grid-column: 1;
+
+  @media (min-width: $desktop-width) {
     width: 100%;
     padding-left: 185px;
   }
@@ -32,12 +32,12 @@
   line-height: 30px;
   color: $text-color-black;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
+    @include title();
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include title();
 
     &::after {
       content: "";
@@ -50,7 +50,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-content: flex-start;
 
     grid-column: 2 / 3;
@@ -64,13 +64,13 @@
 
 // list
 .address__list {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-template-columns: 1fr;
   }
@@ -108,7 +108,7 @@
 
 // map
 .address__map {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
     grid-row: span 2;
   }
@@ -132,7 +132,7 @@
 
   background-color: $color-pattern;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 527px;
     height: 457px;
     margin: 0;
@@ -145,12 +145,12 @@
   height: 52px;
   margin: 0 auto;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     width: 292px;
     margin: 0 auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     align-self: center;
     margin: 0;
 

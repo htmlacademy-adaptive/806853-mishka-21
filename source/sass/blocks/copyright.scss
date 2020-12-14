@@ -12,7 +12,7 @@
   line-height: 18px;
   color: $text-color-black;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 30px;
   }
 }

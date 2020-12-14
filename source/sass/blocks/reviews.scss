@@ -1,11 +1,11 @@
 // reviews
 .reviews {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/review/review.jpg");
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-position: calc(50% - 350px);
   }
 }
@@ -13,7 +13,7 @@
 .reviews__wrapper {
   @include container;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     display: grid;
@@ -22,7 +22,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
 
     grid-template-columns: 185px repeat(2, 1fr);
@@ -33,11 +33,11 @@
 .reviews__title {
   @include title();
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     align-self: center;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2;
   }
 }
@@ -46,7 +46,7 @@
 .reviews__button {
   width: 100%;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     align-self: center;
     width: 175px;
     height: 52px;
@@ -56,18 +56,18 @@
     justify-self: end;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 3;
   }
 }
 
 // slider
 .reviews__slider {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
   }
 }

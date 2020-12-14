@@ -2,7 +2,7 @@
 .about-us {
   @include container;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
 
     grid-template-columns: 185px repeat(2, 1fr);
@@ -13,19 +13,20 @@
 .about-us__title {
   @include title();
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2;
   }
 }
 
 // list
 .about-us__list {
+  @include list-reset;
+
   display: grid;
 
-  @include list-reset;
   row-gap: 30px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     // grid-template-columns: ;
     column-gap: 58px;
 
@@ -33,7 +34,7 @@
     grid-template-rows: repeat(3, 1fr);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
   }
 }

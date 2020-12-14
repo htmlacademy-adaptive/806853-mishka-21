@@ -7,7 +7,7 @@
 .page-footer__wrapper {
   @include container;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     align-items: center;
 
@@ -17,7 +17,7 @@
 
 // img
 .page-footer__logo {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
