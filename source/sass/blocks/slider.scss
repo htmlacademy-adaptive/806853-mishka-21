@@ -5,7 +5,7 @@
 
 // list
 .slider__list {
-  @include list-reset();
+  @include list-reset;
 }
 
 // text

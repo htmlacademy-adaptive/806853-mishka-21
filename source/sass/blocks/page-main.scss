@@ -26,6 +26,18 @@
       min-height: 272px;
     }
   }
+
+  &--catalog {
+    min-height: 177px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 238px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 272px;
+    }
+  }
 }
 
 // title
@@ -35,7 +47,7 @@
 
   text-align: center;
 
-  @include main-title();
+  @include main-title;
 }
 
 // img

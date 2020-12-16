@@ -4,7 +4,7 @@
 
   border-bottom: 1px solid $color-grey-light;
 
-  @include list-reset();
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     justify-content: center;

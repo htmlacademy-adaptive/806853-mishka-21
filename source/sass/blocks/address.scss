@@ -33,7 +33,7 @@
   color: $text-color-black;
 
   @media (min-width: $tablet-width) {
-    @include title();
+    @include title;
 
     display: flex;
     justify-content: space-between;
