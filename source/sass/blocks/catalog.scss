@@ -28,10 +28,6 @@
   height: 100%;
 
   object-fit: cover;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 // wrapper
@@ -53,14 +49,6 @@
   }
 }
 
-// name-wrapper
-.catalog__name-wrapper {
-  @media (min-width: $tablet-width) {
-    // grid-row: 1;
-    // grid-column: 2;
-  }
-}
-
 // name
 .catalog__name a {
   text-decoration: none;
@@ -73,8 +61,6 @@
   font-size: 13px;
   line-height: 30px;
   color: $text-color-black-light;
-
-
 }
 
 // sub-wrapper
