@@ -31,7 +31,7 @@
 
 // title
 .reviews__title {
-  @include title();
+  @include title;
 
   @media (min-width: $tablet-width) {
     align-self: center;

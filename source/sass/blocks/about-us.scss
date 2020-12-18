@@ -11,7 +11,7 @@
 
 // title
 .about-us__title {
-  @include title();
+  @include title;
 
   @media (min-width: $desktop-width) {
     grid-column: 2;

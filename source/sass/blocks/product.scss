@@ -20,7 +20,7 @@
 
 // title
 .product__title {
-  @include title();
+  @include title;
 
   @media (max-width: $desktop-width) {
     margin: 0;
