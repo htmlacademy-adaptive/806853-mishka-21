@@ -1420,11 +1420,11 @@ img {
         background-color: #ececec; } }
 
 .article__video-wrapper {
-  position: relative;
-  min-height: 455px; }
+  position: relative; }
   @media (min-width: 768px) {
     .article__video-wrapper {
-      order: -1; } }
+      order: -1;
+      min-height: 455px; } }
 
 .article__img {
   position: absolute;
@@ -1434,7 +1434,7 @@ img {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover; }
-  @media (min-width: 1150px) {
+  @media (min-width: 768px) {
     .article__img {
       height: 100%; } }
 
