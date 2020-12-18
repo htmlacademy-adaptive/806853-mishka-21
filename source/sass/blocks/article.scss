@@ -52,10 +52,9 @@
 .article__video-wrapper {
   position: relative;
 
-  min-height: 455px;
-
   @media (min-width: $tablet-width) {
     order: -1;
+    min-height: 455px;
   }
 }
 
@@ -70,7 +69,7 @@
 
   object-fit: cover;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     height: 100%;
   }
 }
