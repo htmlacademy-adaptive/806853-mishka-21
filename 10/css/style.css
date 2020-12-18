@@ -1426,6 +1426,9 @@ img {
       order: -1;
       min-height: 455px; } }
 
+.article__video {
+  width: 100%; }
+
 .article__img {
   position: absolute;
   top: 0;
