@@ -3,39 +3,76 @@
   position: relative;
 
   padding-bottom: 40px;
+
+  &--catalog {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+
+    &--catalog {
+      padding-bottom: 63px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
+
+    &--catalog {
+      padding-bottom: 103px;
+    }
+  }
 }
 
 // wrapper
 .page-main__wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  min-height: 373px;
+  min-height: 282px;
 
   background-color: $color-grey-background;
 
   &--form {
     min-height: 177px;
-
-    @media (min-width: $tablet-width) {
-      min-height: 238px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 272px;
-    }
   }
 
   &--catalog {
-    min-height: 177px;
+    position: relative;
 
-    @media (min-width: $tablet-width) {
+    min-height: 177px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+
+      @include zigzag-white;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 536px;
+
+    &--form {
       min-height: 238px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--catalog {
+      min-height: 184px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 541px;
+
+    &--form {
       min-height: 272px;
+    }
+
+    &--catalog {
+      min-height: 164px;
+      margin-bottom: 135px;
     }
   }
 }
@@ -45,9 +82,33 @@
   position: relative;
   z-index: 1;
 
+  padding-top: 54px;
+
   text-align: center;
 
   @include main-title;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+
+    &--catalog {
+      margin: 0;
+      margin-top: 10px;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      margin-top: 16px;
+    }
+  }
+}
+
+.page-main__title-br--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 // img
@@ -60,9 +121,30 @@
 // nav
 .page-main__nav {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+// about-us
+.page-main__about-us {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
 }
 
 // reviews
 .page-main__reviews {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }

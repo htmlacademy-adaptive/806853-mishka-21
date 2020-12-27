@@ -1,6 +1,6 @@
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
   border-bottom: 1px solid $color-grey-light;
 
@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+    padding-top: 8px;
   }
 }
 

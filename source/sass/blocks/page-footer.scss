@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: center;
+    padding-top: 20px;
 
     grid-template-columns: max-content 1fr max-content;
   }
@@ -17,8 +18,16 @@
 
 // img
 .page-footer__logo {
+  width: 100px;
+
   @media (max-width: $tablet-width) {
     display: none;
+  }
+
+  @media (max-width: $desktop-width) {
+    img {
+      width: 100%;
+    }
   }
 }
 

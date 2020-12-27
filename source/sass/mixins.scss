@@ -44,6 +44,10 @@
   font-size: 17px;
   line-height: 24px;
   color: $text-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 @mixin sub-title-aquamarine {
@@ -86,4 +90,36 @@ input[type="radio"].visually-hidden {
     width: 1150px;
     padding: 0 50px;
   }
+}
+
+@mixin zigzag {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 20px;
+
+  background-image: url("../img/svg/zigzag-line-desktop.svg");
+  background-repeat: repeat-x;
+  background-size: 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 35px;
+  }
+}
+
+@mixin zigzag-white {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+
+  width: 100%;
+  height: 24px;
+
+  background-image: url("../img/svg/zigzag-fill-desktop.svg");
+  background-repeat: repeat-x;
+  background-position: 0 0;
 }

@@ -1,12 +1,24 @@
 // list
 .catalog__list {
+  display: grid;
+  margin-bottom: 41px;
+
   @include list-reset;
   @include container;
+  row-gap: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+
+    row-gap: 56px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 57px;
+
     column-gap: 50px;
+
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -14,20 +26,32 @@
 .catalog__item {
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
   }
 }
 
 // img
 .catalog__img {
   width: 100%;
-  height: 100%;
+  margin-bottom: 25px;
 
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    min-height: 330px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 458px;
+  }
 }
 
 // wrapper
@@ -38,38 +62,62 @@
   padding: 0 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 33px;
+    padding: 27px 33px;
+
     border-top: 1px solid $color-grey-light;
     border-bottom: 1px solid $color-grey-light;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 27px;
+    padding-bottom: 23px;
+
     border: 1px solid $color-grey-light;
     border-top: none;
   }
 }
 
 // name
-.catalog__name a {
-  text-decoration: none;
+.catalog__name-wrapper {
+  margin-bottom: 16px;
+}
 
-  @include sub-title;
+.catalog__name {
+  margin: 0;
+  margin-bottom: 5px;
+
+  a {
+    text-decoration: none;
+
+    @include sub-title;
+  }
 }
 
 // feature
 .catalog__feature {
+  margin: 0;
+
   font-size: 13px;
   line-height: 30px;
   color: $text-color-black-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 // sub-wrapper
 .catalog__sub-wrapper {
-  border-top: 1px solid $color-grey-light;
   display: flex;
-
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+
+  border-top: 1px solid $color-grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+  }
 }
 
 // price
@@ -81,5 +129,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    font-size: 17px;
   }
 }
