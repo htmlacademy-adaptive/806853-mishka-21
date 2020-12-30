@@ -1,16 +1,18 @@
 // list
 .catalog__list {
-  display: grid;
-  margin-bottom: 41px;
-
   @include list-reset;
   @include container;
-  row-gap: 44px;
+
+  display: grid;
+  margin-bottom: 31px;
+
+
+  row-gap: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
 
-    row-gap: 56px;
+    row-gap: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,8 +26,12 @@
 
 // item
 .catalog__item {
+  border: 1px solid $color-grey-light;
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-bottom: 0;
 
     grid-template-columns: repeat(2, 1fr);
   }
@@ -63,9 +69,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 33px;
-
-    border-top: 1px solid $color-grey-light;
-    border-bottom: 1px solid $color-grey-light;
   }
 
   @media (min-width: $desktop-width) {

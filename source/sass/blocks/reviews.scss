@@ -6,13 +6,12 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/review/review.jpg");
     background-repeat: no-repeat;
-    padding-bottom: 67px;
+    padding-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 125px;
+    padding-bottom: 146px;
     background-position: calc(50% - 350px) top;
-    margin-bottom: 62px;
   }
 
   &::after {

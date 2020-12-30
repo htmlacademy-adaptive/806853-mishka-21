@@ -20,33 +20,7 @@
 
     column-gap: 80px;
 
-    border-bottom: none;
-
     grid-template-columns: max-content 1fr;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 50px;
-
-      width: 80%;
-      height: 1px;
-
-      background-color: $color-grey-light;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 50px;
-      bottom: 0;
-
-      width: 80%;
-      height: 1px;
-
-      background-color: $color-grey-light;
-    }
   }
 }
 // article vidioe wrapper
@@ -109,12 +83,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 
   a {
     text-decoration: none;
 
     @include sub-title;
+
+    line-height: 27px;
   }
 
   &::before {
@@ -139,6 +115,7 @@
 
     a {
       margin-top: 6px;
+      line-height: 22px;
     }
   }
 

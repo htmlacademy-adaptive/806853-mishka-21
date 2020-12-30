@@ -5,14 +5,14 @@
 
 // list
 .slider__list {
-  margin-bottom: 30px;
-
   @include list-reset;
+
+  margin-bottom: 30px;
 }
 
 // text
 .slider__text {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   font-size: 15px;
   line-height: 30px;
