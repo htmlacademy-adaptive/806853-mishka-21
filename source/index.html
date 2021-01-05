@@ -13,7 +13,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="">
-        <img src="img/logo/logo-mobile.svg" width="86" height="35" alt="Логотип магазина вязанных вещей 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img src="img/logo/logo-mobile.svg" alt="Логотип магазина вязанных вещей 'Мишка'">
+        </picture>
       </a>
       <button class="page-header__burger burger" type="button">
         <span class="visually-hidden">Открытие и закрытие навигационного меню</span>
@@ -63,7 +67,6 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper">
-      <img class="page-main__img" aria-hidden="true" height="373" width="320" src="img/main/main-mobile.jpg" alt="">
       <h1 class="page-main__title">Милые штуки<br class="page-main__title-br--mobile"> ручной<br> работы для дома</h1>
     </div>
 
@@ -100,8 +103,18 @@
             <dd class="product__definition">15 см</dd>
           </div>
         </dl>
-        <img class="product__img" width="260" height="315" src="img/product/product-mobile.jpg"
-          alt="Картинка связанных корзинок, серо-зеленого и розово-белого цвета">
+
+        <div class="product__img-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/catalog/photo-1-desktop.jpg 1x, img/product/product-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/product/product-tablet.jpg 1x, img/product/product-tablet@2x.jpg 2x">
+            <img class="product__img" src="img/product/product-mobile.jpg" srcset="img/product/product-mobile@2x.jpg 2x"
+              alt="Картинка связанных корзинок, серо-зеленого и розово-белого цвета">
+          </picture>
+        </div>
+
         <p class="product__price">Цена: 990 руб.</p>
         <a class="product__button button" href="">Заказать</a>
       </div>
@@ -118,7 +131,7 @@
             <p class="about-us__text">Скандинавский стиль <br>по российской цене</p>
           </li>
           <li class="about-us__item about-us__item--like">
-            <p class="about-us__text">Увеличивает лайкина <br>на фотографиях</p>
+            <p class="about-us__text">Увеличивает лайки <br>на фотографиях</p>
           </li>
           <li class="about-us__item about-us__item--clew">
             <p class="about-us__text">Связано вручную <br>с любовью и умилением</p>
@@ -139,9 +152,13 @@
         <div class="reviews__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="slider__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как<br class="slider__text-br--mobile slider__text-br--desktop"> у популярных инстамамочек.
+                <br class="slider__text-br--mobile"> В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                <br class="slider__text-br--mobile"> и мои
+                фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
               <p class="slider__name">Анастасия Красильникова</p>
               <a href="instagram.com" class="slider__instagram">@misssssiskras</a>
             </li>
@@ -208,7 +225,13 @@
 
         <a href="https://goo.gl/maps/2qJMCUXDiLdZpXZr9">
           <span class="address__icon" aria-hidden="true"></span>
-          <img class="address__img" src="img/map/map-mobile.jpg" height="454" alt="Карта с опизанием проезда"></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg  ">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg">
+              <img class="address__img" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 1x" height="454" alt="Карта с опизанием проезда">
+          </picture>
+
+        </a>
       </div>
       <a class="address__button button" href="">Напишите нам</a>
     </address>
@@ -218,7 +241,9 @@
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img src="img/logo/logo-footer.svg" width="86" height="35" alt="Логотип магазина вязанных вещей 'Мишка'"></a>
+        <img src="img/logo/logo-footer.svg" width="86" height="35" alt="Логотип магазина вязанных вещей 'Мишка'">
+      </a>
+
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--instagram" href="">

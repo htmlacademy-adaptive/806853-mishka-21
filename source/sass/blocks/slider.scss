@@ -7,26 +7,39 @@
 .slider__list {
   @include list-reset;
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 // text
 .slider__text {
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 33px;
 
   font-size: 15px;
   line-height: 30px;
   color: $text-color-black-light;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
+  }
+}
+
+.slider__text-br--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__text-br--desktop {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }
 
@@ -38,6 +51,14 @@
   font-size: 17px;
   line-height: 24px;
   color: $text-color-black;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+  }
 }
 
 // instagram
@@ -56,7 +77,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 13px;
-    bottom: 32px;
+    bottom: 30px;
 
     display: grid;
     justify-content: center;

@@ -1,6 +1,10 @@
 // footer
 .page-footer {
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+  }
 }
 
 // wrapper
@@ -10,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
 
     grid-template-columns: max-content 1fr max-content;
   }
@@ -24,10 +28,12 @@
     display: none;
   }
 
-  @media (max-width: $desktop-width) {
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 102px;
   }
 }
 

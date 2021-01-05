@@ -83,6 +83,10 @@
 // name
 .catalog__name-wrapper {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .catalog__name {
@@ -119,7 +123,7 @@
   border-top: 1px solid $color-grey-light;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 24px;
   }
 }
 

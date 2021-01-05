@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/review/review.jpg");
     background-repeat: no-repeat;
-    padding-bottom: 93px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 146px;
+    padding-bottom: 117px;
     background-position: calc(50% - 350px) top;
   }
 
@@ -26,7 +26,7 @@
     position: relative;
 
     display: grid;
-    row-gap: 23px;
+    row-gap: 27px;
     padding-top: 47px;
     // min-height: 457px;
 
@@ -44,7 +44,8 @@
 // title
 .reviews__title {
   @include title;
-  margin-bottom: 0;
+
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -62,7 +63,8 @@
   min-height: 52px;
 
   @media (min-width: $tablet-width) {
-    align-self: end;
+    align-self: center;
+    margin-top: 20px;
     width: 175px;
     height: 52px;
 
@@ -73,6 +75,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3;
+    margin-top: 30px;
+    letter-spacing: -0.4px;
   }
 }
 

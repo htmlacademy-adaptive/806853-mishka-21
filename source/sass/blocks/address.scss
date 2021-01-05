@@ -22,14 +22,14 @@
   grid-column: 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     align-self: end;
     width: 100%;
     padding-left: 175px;
-    margin-bottom: 29px;
+    margin-bottom: 35px;
   }
 }
 
@@ -46,29 +46,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 49px;
+    position: relative;
 
     @include title;
 
     &::after {
       content: "";
+      right: 2px;
+      top: -23px;
+      position: absolute;
 
       display: block;
       width: 47px;
       height: 81px;
 
       background-image: url("../img/svg/flag.svg");
+      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+    margin-bottom: 35px;
 
     grid-column: 2 / 3;
 
     &::after {
       position: absolute;
-      left: calc(50% - 460px);
+      top: -15px;
+      right: 0;
+      left: -112px;
     }
   }
 }
@@ -125,6 +133,7 @@
 
   &--mail {
     border-bottom: 1px solid $color-aquamarine;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -136,8 +145,10 @@
 
 // map
 .address__map {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,6 +161,9 @@
 // icon
 .address__icon {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   display: block;
   width: 67px;
@@ -162,7 +176,7 @@
 .address__img {
   width: 100%;
   height: 454px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   background-color: $color-pattern;
 
@@ -184,15 +198,17 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     margin: 0 auto;
+    letter-spacing: -0.7px;
   }
 
   @media (min-width: $desktop-width) {
     align-self: center;
     margin: 0;
+    margin-bottom: 5px;
     margin-top: auto;
     margin-left: 175px;
 
     grid-column: 1 / 2;
-    font-size: 17px;
+    font-size: 18px;
   }
 }

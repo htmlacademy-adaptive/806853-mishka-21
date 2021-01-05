@@ -44,8 +44,9 @@
 .catalog-nav__link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   min-height: 103px;
+  padding-top: 25px;
   padding-right: 25px;
   padding-left: 30px;
 
@@ -81,5 +82,11 @@
     padding-left: 36px;
     padding-bottom: 8px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--toys {
+      padding-right: 36px;
+    }
   }
 }

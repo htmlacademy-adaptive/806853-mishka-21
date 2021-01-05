@@ -126,4 +126,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg/zigzag-fill-desktop.svg");
   background-repeat: repeat-x;
   background-position: 0 0;
+  background-size: contain;
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
+    bottom: -14px;
+  }
 }
