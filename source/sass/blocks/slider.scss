@@ -31,15 +31,15 @@
   }
 }
 
-.slider__text-br--mobile {
+.slider__text-br {
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
 
-.slider__text-br--desktop {
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    &--desktop {
+      display: inline;
+    }
   }
 }
 

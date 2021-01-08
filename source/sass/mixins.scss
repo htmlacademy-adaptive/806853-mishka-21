@@ -112,6 +112,9 @@ input[type="radio"].visually-hidden {
 
   @media (min-width: $desktop-width) {
     height: 23px;
+    width: 1050px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 

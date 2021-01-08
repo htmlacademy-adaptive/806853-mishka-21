@@ -81,10 +81,7 @@
   font-size: 15px;
   line-height: 24px;
   color: $text-color-black-light;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

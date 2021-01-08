@@ -21,15 +21,11 @@
 // item
 .nav__item {
   position: relative;
+  border-top: 1px solid $color-grey;
 
-  @media (max-width: $tablet-width) {
-    border-top: 1px solid $color-grey;
-
-    &:last-child {
-      border-bottom: 1px solid $color-grey;
-    }
+  &:last-child {
+    border-bottom: 1px solid $color-grey;
   }
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -152,6 +148,8 @@
   text-decoration: none;
   transition: 0.2s;
   z-index: 1;
+  margin-left: -84px;
+  letter-spacing: 1px;
 
   &:hover,
   &:focus {
@@ -178,16 +176,12 @@
     opacity: 0.2;
   }
 
-  @media (max-width: $tablet-width) {
-    margin-left: -84px;
-
-    letter-spacing: 1px;
-  }
-
   @media (min-width: $tablet-width) {
     align-items: center;
     padding: 10px 0;
     padding-top: 19px;
+    margin-left: 0;
+    letter-spacing: normal;
 
     &--search {
       padding: 36px 32px;

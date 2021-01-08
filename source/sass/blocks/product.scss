@@ -66,10 +66,8 @@
 
   @include sub-title-aquamarine();
 
-  @media (max-width: $tablet-width) {
-    &--hidden {
-      display: none;
-    }
+  br {
+    display: none;
   }
 
   @media (max-width: $desktop-width) {
@@ -89,6 +87,10 @@
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     justify-self: end;
+
+    br {
+      display: inline;
+    }
   }
 
   @media (min-width: $desktop-width) {

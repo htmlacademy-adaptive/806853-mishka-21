@@ -413,6 +413,12 @@
     background-position: center;
     transform: translate(0, -50%);
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 6px;
+    }
+  }
 }
 
 // full-name

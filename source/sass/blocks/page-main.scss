@@ -142,6 +142,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 35px;
 
+    & br:nth-child(1) {
+      display: none;
+    }
+
     &--form {
       margin: 0;
       padding-top: 0;
@@ -163,12 +167,6 @@
     &--catalog {
       margin-top: 14px;
     }
-  }
-}
-
-.page-main__title-br--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 
