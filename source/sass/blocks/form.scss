@@ -76,6 +76,12 @@
 
   @media (min-width: $tablet-width) {
     &--textarea {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--textarea {
       margin-bottom: 47px;
     }
   }

@@ -19,13 +19,18 @@
 }
 
 // img
-.copyright__img {
-  object-fit: cover;
-  margin-top: 6px;
-  width: 26px;
-  height: 37px;
+.copyright__link {
+  display: block;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
+  color: $text-color-aquamarine;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $color-aquamarine-medium;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

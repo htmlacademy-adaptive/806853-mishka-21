@@ -64,7 +64,7 @@
   &--catalog {
     position: relative;
 
-    min-height: 177px;
+    min-height: 173px;
     margin-bottom: 30px;
     background-image: none;
   }
@@ -82,6 +82,7 @@
     &--form {
       min-height: 138px;
       margin-bottom: 63px;
+      background-image: none;
 
       &::after {
         content: "";
@@ -93,6 +94,7 @@
     &--catalog {
       min-height: 135px;
       margin-bottom: 78px;
+      background-image: none;
 
       &::after {
         content: "";
@@ -115,11 +117,13 @@
     &--form {
       min-height: 170px;
       margin-bottom: 114px;
+      background-image: none;
     }
 
     &--catalog {
       min-height: 170px;
       margin-bottom: 126px;
+      background-image: none;
     }
   }
 }

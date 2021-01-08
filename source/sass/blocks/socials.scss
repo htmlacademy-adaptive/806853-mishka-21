@@ -6,6 +6,8 @@
 
   @include list-reset;
 
+  margin-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     justify-content: center;
     border-bottom: none;
@@ -17,4 +19,21 @@
   display: block;
   padding: 20px;
   padding-top: 28px;
+  color: $color-black;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $color-aquamarine-medium;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--faceboock {
+    svg {
+      margin-top: -4px;
+    }
+  }
 }

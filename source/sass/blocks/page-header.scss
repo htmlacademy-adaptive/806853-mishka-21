@@ -39,6 +39,17 @@
   display: flex;
   justify-content: center;
   padding: 22px 0;
+  z-index: 1;
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     align-self: center;
