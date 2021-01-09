@@ -94,4 +94,13 @@
 
   background-color: initial;
   border: 1px solid $color-grey-light;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

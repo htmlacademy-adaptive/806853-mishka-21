@@ -8,6 +8,15 @@
   padding-bottom: 33px;
 
   border: 1px solid $color-grey-light;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 46px;
@@ -77,6 +86,23 @@
   background-color: initial;
   border: none;
   transform: translate(-50%, -50%);
+
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/svg/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    outline: none;
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 // title
