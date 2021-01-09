@@ -1,17 +1,25 @@
-// about-us
-.about-us {
+// wrapper
+.about-us__wrapper {
   @include container;
 
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template-columns: 185px repeat(2, 1fr);
+    grid-template-columns: 175px repeat(2, 1fr);
   }
 }
 
 // title
 .about-us__title {
+  margin-bottom: 27px;
+
   @include title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+
+    grid-column: 2;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
@@ -20,22 +28,23 @@
 
 // list
 .about-us__list {
-  @include list-reset;
-
   display: grid;
 
-  row-gap: 30px;
+  @include list-reset;
+  row-gap: 32px;
 
   @media (min-width: $tablet-width) {
-    // grid-template-columns: ;
     column-gap: 58px;
 
     grid-auto-flow: column;
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 117px;
   }
 }
 
@@ -43,63 +52,103 @@
 .about-us__item {
   flex-basis: 50%;
 
-
   &::before {
     content: "";
 
     display: block;
+    width: 55px;
+    height: 55px;
+
 
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--ecology::before {
-    width: 33px;
-    height: 38px;
-
     background-image: url("../img/about-us/icon-ecology.svg");
+    background-size: 33px 38px;
+    margin-left: 8px;
   }
 
   &--price::before {
-    width: 47px;
-    height: 27px;
-
     background-image: url("../img/about-us/icon-price.svg");
+    background-size: 47px 27px;
+    margin-top: -3px;
   }
 
   &--like::before {
-    width: 34px;
-    height: 27px;
-
     background-image: url("../img/about-us/icon-like.svg");
+    background-size: 34px 27px;
+    margin-top: 1px;
+    margin-left: 7px;
+    margin-bottom: -6px;
   }
 
   &--clew::before {
-    width: 35px;
-    height: 34px;
-
     background-image: url("../img/about-us/icon-clew.svg");
+    background-size: 35px 34px;
+    margin-left: 2px;
+    margin-top: -1px;
+    margin-bottom: -3px;
   }
 
   &--rocket::before {
-    width: 55px;
-    height: 23px;
-
     background-image: url("../img/about-us/icon-rocket.svg");
+    background-size: 55px 23px;
+    margin-left: -6px;
+    margin-bottom: -5px;
   }
 
   &--gift::before {
-    width: 33px;
-    height: 32px;
-
     background-image: url("../img/about-us/icon-gift.svg");
+    background-size: 33px 32px;
+    margin-bottom: -1px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--ecology::before {
+      margin-bottom: 3px;
+    }
+
+    &--like::before {
+      margin-top: -2px;
+    }
+
+    &--clew::before {
+      margin-left: 4px;
+      margin-top: 4px;
+      margin-bottom: 0;
+    }
+
+    &--rocket::before {
+      margin-bottom: -3px;
+    }
+
+    &--gift::before {
+      margin-left: 3px;
+      margin-top: -8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--like::before {
+      margin-top: -5px;
+    }
   }
 }
 
 // text
 .about-us__text {
+  margin: 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $text-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

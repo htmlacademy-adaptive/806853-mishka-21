@@ -1,41 +1,129 @@
-// wrapper
 .page-main {
   position: relative;
 
   padding-bottom: 40px;
+
+  &--catalog {
+    padding-bottom: 58px;
+  }
+
+  &--form {
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+
+    &--form {
+      padding-bottom: 51px;
+    }
+
+    &--catalog {
+      padding-bottom: 63px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+
+    &--form {
+      padding-bottom: 51px;
+    }
+
+    &--catalog {
+      padding-bottom: 103px;
+    }
+  }
 }
 
 // wrapper
 .page-main__wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  min-height: 373px;
+  min-height: 279px;
 
   background-color: $color-grey-background;
+  background-image: url("../img/main/main-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -18px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main/main-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   &--form {
+    position: relative;
+
     min-height: 177px;
-
-    @media (min-width: $tablet-width) {
-      min-height: 238px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 272px;
-    }
+    margin-bottom: 16px;
+    background-image: none;
   }
 
   &--catalog {
-    min-height: 177px;
+    position: relative;
 
-    @media (min-width: $tablet-width) {
-      min-height: 238px;
+    min-height: 173px;
+    margin-bottom: 30px;
+    background-image: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 536px;
+    background-image: url("../img/main/main-tablet.jpg");
+    background-position: center -93px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/main-tablet@2x.jpg");
+      background-size: $tablet-width auto;
     }
 
-    @media (min-width: $desktop-width) {
-      min-height: 272px;
+    &--form {
+      min-height: 138px;
+      margin-bottom: 63px;
+      background-image: none;
+
+      &::after {
+        content: "";
+
+        @include zigzag-white;
+      }
+    }
+
+    &--catalog {
+      min-height: 135px;
+      margin-bottom: 78px;
+      background-image: none;
+
+      &::after {
+        content: "";
+
+        @include zigzag-white;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 541px;
+    background-image: url("../img/main/main-desktop.jpg");
+    background-position: center -86px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/main-desktop@2x.jpg");
+      background-size: $desktop-width auto;
+    }
+
+    &--form {
+      min-height: 170px;
+      margin-bottom: 114px;
+      background-image: none;
+    }
+
+    &--catalog {
+      min-height: 170px;
+      margin-bottom: 126px;
+      background-image: none;
     }
   }
 }
@@ -45,14 +133,49 @@
   position: relative;
   z-index: 1;
 
+  padding-top: 52px;
+
   text-align: center;
 
   @include main-title;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+
+    & br:nth-child(1) {
+      display: none;
+    }
+
+    &--form {
+      margin: 0;
+      padding-top: 0;
+      margin-top: 10px;
+    }
+
+    &--catalog {
+      margin: 0;
+      margin-top: 10px;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      margin-top: 14px;
+    }
+
+    &--catalog {
+      margin-top: 14px;
+    }
+  }
 }
 
 // img
 .page-main__img {
   position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translate(-50%);
 
   width: 320px;
 }
@@ -60,9 +183,38 @@
 // nav
 .page-main__nav {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+// about-use
+.page-main__about-us {
+  margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 // reviews
 .page-main__reviews {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
 }

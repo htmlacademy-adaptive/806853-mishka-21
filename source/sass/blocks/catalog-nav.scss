@@ -7,16 +7,9 @@
 
 // wrapper
 .catalog-nav__wrapper {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-
-  width: 100%;
-  height: 24px;
-
-  background-image: url("../img/svg/zigzag-fill-desktop.svg");
-  background-repeat: repeat-x;
-  background-position: 0 0;
+  @media (min-width: $tablet-width) {
+    @include zigzag-white;
+  }
 }
 
 // list
@@ -24,7 +17,7 @@
   background-color: $color-grey-background;
 
   @include list-reset;
-  @include container;
+
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -32,16 +25,8 @@
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-.catalog-nav__item {
-  &:nth-child(1) {
-    background-color: $color-aquamarine;
-  }
-
-  &:nth-child(2) {
-    background-color: $color-aquamarine-dark;
+    @include container;
   }
 }
 
@@ -49,19 +34,39 @@
 .catalog-nav__link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   min-height: 103px;
-  padding: 0 36px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 30px;
 
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: $text-color-white;
   text-decoration: none;
+  transition: 0.2s;
+
+  &--interior {
+    background-color: $color-aquamarine;
+
+    &:hover {
+      background-color: $color-aquamarine-light;
+    }
+  }
+
+  &--toys {
+    background-color: $color-aquamarine-dark;
+
+    &:hover {
+      background-color: $color-aquamarine-medium;
+    }
+  }
 
   &::after {
     content: "";
 
+    transition: 0.2s;
     display: block;
     width: 60px;
     height: 60px;
@@ -76,5 +81,33 @@
 
   &--toys::after {
     background-image: url("../img/catalog-nav/toy.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    min-height: 120px;
+    padding-right: 28px;
+    padding-left: 36px;
+    padding-bottom: 8px;
+    line-height: 30px;
+
+    &:hover {
+      min-height: 125px;
+      padding-top: 20px;
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
+    &::after {
+      margin-top: 5px;
+    }
+
+    &--toys::after {
+      margin-right: 5px;
+    }
   }
 }

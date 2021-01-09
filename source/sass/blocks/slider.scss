@@ -6,21 +6,59 @@
 // list
 .slider__list {
   @include list-reset;
+
+  margin-bottom: 28px;
 }
 
 // text
 .slider__text {
+  margin: 0;
+  margin-bottom: 33px;
+
   font-size: 15px;
   line-height: 30px;
   color: $text-color-black-light;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.slider__text-br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: inline;
+    }
+  }
 }
 
 // name
 .slider__name {
+  margin-bottom: 5px;
+
   font-weight: 900;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   color: $text-color-black;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+  }
 }
 
 // instagram
@@ -38,15 +76,31 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
-    bottom: 100px;
+    right: 13px;
+    bottom: 30px;
+
+    display: grid;
+    justify-content: center;
+
+    gap: 21px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // button
 .slider__button {
   width: 100%;
+  min-height: 52px;
 
   background-color: initial;
   border: 1px solid $color-grey-light;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

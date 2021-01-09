@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 // tagline
@@ -11,8 +15,22 @@
   font-size: 19px;
   line-height: 18px;
   color: $text-color-black;
+  margin-right: 28px;
+}
 
-  @media (min-width: $tablet-width) {
-    margin-right: 30px;
+// img
+.copyright__link {
+  display: block;
+
+  color: $text-color-aquamarine;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $color-aquamarine-medium;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
