@@ -435,7 +435,7 @@ img {
     .page-main__wrapper {
       min-height: 541px;
       background-image: url("../img/main/main-desktop.jpg");
-      background-position: center -86px; } }
+      background-position: center -88px; } }
   @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
     .page-main__wrapper {
       background-image: url("../img/main/main-desktop@2x.jpg");
@@ -523,6 +523,9 @@ img {
 .catalog-nav {
   position: relative;
   background-color: #f9f9f9; }
+  @media (min-width: 1150px) {
+    .catalog-nav {
+      background: linear-gradient(0deg, #f9f9f9 120px, rgba(0, 0, 0, 0) 0); } }
 
 @media (min-width: 768px) {
   .catalog-nav__wrapper {
@@ -561,6 +564,16 @@ img {
     .catalog-nav__list {
       width: 1150px;
       padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .catalog-nav__list {
+      background-color: rgba(0, 0, 0, 0);
+      min-height: 125px;
+      margin-top: -5px; } }
+
+@media (min-width: 1150px) {
+  .catalog-nav__item {
+    display: flex;
+    align-items: flex-end; } }
 
 .catalog-nav__link {
   display: flex;
@@ -604,14 +617,17 @@ img {
       padding-bottom: 8px;
       line-height: 30px; }
       .catalog-nav__link:hover {
-        min-height: 125px;
-        padding-top: 20px; }
+        padding-top: 20px;
+        align-self: flex-start; }
       .catalog-nav__link:active::after {
         opacity: 0.3; }
       .catalog-nav__link::after {
         margin-top: 5px; }
       .catalog-nav__link--toys::after {
         margin-right: 5px; } }
+  @media (min-width: 1150px) {
+    .catalog-nav__link {
+      width: 100%; } }
 
 .product {
   position: relative;
