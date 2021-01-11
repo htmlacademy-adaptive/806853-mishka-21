@@ -162,7 +162,7 @@
           <legend class="form__legend">Цвет</legend>
           <ul class="form__list form__list--color">
             <li class="form__item">
-              <input class="form__checkbox visually-hidden" id="form__checkbox--1" name="Белый" type="checkbox">
+              <input class="form__checkbox visually-hidden" id="form__checkbox--1" name="Белый" type="checkbox" checked>
               <label class="form__label form__label--checkbox" for="form__checkbox--1" checked>Белый</label>
             </li>
             <li class="form__item">
@@ -174,7 +174,7 @@
               <label class="form__label form__label--checkbox" for="form__checkbox--3">«Тиффани»</label>
             </li>
             <li class="form__item">
-              <input class="form__checkbox visually-hidden" id="form__checkbox--4" name="Черный" type="checkbox">
+              <input class="form__checkbox visually-hidden" id="form__checkbox--4" name="Черный" type="checkbox" checked>
               <label class="form__label form__label--checkbox" for="form__checkbox--4">Черный</label>
             </li>
             <li class="form__item">
@@ -195,15 +195,15 @@
           <ul class="form__list form__list--full-name">
             <li class="form__item form__item--full-name">
               <label class="form__label form__label--full-name"  for="form__input--name">Имя:</label>
-              <input class="form__full-name" type="text" name="Имя" id="form__input--name" placeholder="Введите ваше имя*">
+              <input class="form__full-name" type="text" name="Имя" required id="form__input--name" placeholder="Введите ваше имя*">
             </li>
             <li class="form__item form__item--full-name">
               <label class="form__label form__label--full-name"  for="form__input--surname">Фамилия:</label>
-              <input class="form__full-name" type="text" name="Фамилия" id="form__input--surname" placeholder="Укажите фамилию*">
+              <input class="form__full-name" type="text" name="Фамилия" required id="form__input--surname" placeholder="Укажите фамилию*">
             </li>
             <li class="form__item form__item--full-name">
               <label class="form__label form__label--full-name"  for="form__input--patronymic">Отчество:</label>
-              <input class="form__full-name" type="text" name="Отчество" id="form__input--patronymic"
+              <input class="form__full-name" type="text" required name="Отчество" id="form__input--patronymic"
                 placeholder="Отчество, если желаете">
             </li>
           </ul>
@@ -213,7 +213,7 @@
       <fieldset class="form__fieldset form__fieldset--phone">
         <div class="form__wrapper form__wrapper--phone">
           <legend class="form__legend form__legend--phone">Тел</legend>
-          <input class="form__contact form__contact--phone" name="Телефон" type="tel" id="form__contact--phone"
+          <input class="form__contact form__contact--phone" required name="Телефон" type="tel" id="form__contact--phone"
             placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           <label class="form__label form__label--phone" for="form__contact--phone">
             <svg aria-hidden="true" width="25" height="24">
