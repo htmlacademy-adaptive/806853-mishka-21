@@ -1703,8 +1703,8 @@ img {
 .form__radio:checked + .form__label--radio::after {
   content: "";
   position: absolute;
-  top: 50%;
   left: 12px;
+  top: 50%;
   display: block;
   width: 16px;
   height: 16px;
