@@ -164,7 +164,11 @@
         <div class="product__img-wrapper">
           <picture>
             <source media="(min-width: 1150px)"
-              srcset="img/product/product-desktop 1x, img/product/product-desktop@2x.jpg 2x">
+              srcset="img/product/product-desktop.webp 1x, img/product/product-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/product/product-tablet.webp 1x, img/product/product-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1150px)"
+              srcset="img/product/product-desktop.webp 1x, img/product/product-desktop@2x.webp 2x">
             <source media="(min-width: 768px)"
               srcset="img/product/product-tablet.jpg 1x, img/product/product-tablet@2x.jpg 2x">
             <img class="product__img" src="img/product/product-mobile.jpg" srcset="img/product/product-mobile@2x.jpg 2x"
@@ -236,13 +240,13 @@
           </ul>
           <div class="slider__wrapper-button">
             <button class="slider__button slider__button--prev">
-              <svg aria-hidden="true"  width="50" height="26">
+              <svg aria-hidden="true" width="50" height="26">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#slider-prev"></use>
               </svg>
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <button class="slider__button slider__button--next">
-              <svg aria-hidden="true"  width="50" height="26">
+              <svg aria-hidden="true" width="50" height="26">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#slider-next"></use>
               </svg>
               <span class="visually-hidden">Следующий слайд</span>
@@ -281,8 +285,10 @@
         <a href="https://goo.gl/maps/2qJMCUXDiLdZpXZr9">
           <span class="address__icon" aria-hidden="true"></span>
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg  ">
-            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg">
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
             <img class="address__img" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 1x" height="454"
               alt="Карта с опизанием проезда">
           </picture>
