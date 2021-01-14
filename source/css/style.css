@@ -84,10 +84,10 @@ img {
   position: absolute;
   top: 24px;
   right: 26px;
-  width: 30px;
   height: 30px;
+  width: 30px;
   background-color: inherit;
-  background-image: url("../img/svg/menu-close.svg.svg");
+  background-image: url("../img/svg/menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none; }
