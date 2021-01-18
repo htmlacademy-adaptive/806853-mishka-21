@@ -4,10 +4,10 @@
   padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
     background-image: url("../img/review/review.jpg");
     background-size: 350px;
     background-repeat: no-repeat;
-    padding-bottom: 66px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review/review@2x.jpg");

@@ -975,10 +975,10 @@ img {
   padding-bottom: 50px; }
   @media (min-width: 768px) {
     .reviews {
+      padding-bottom: 66px;
       background-image: url("../img/review/review.jpg");
       background-size: 350px;
-      background-repeat: no-repeat;
-      padding-bottom: 66px; } }
+      background-repeat: no-repeat; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
     .reviews {
       background-image: url("../img/review/review@2x.jpg"); } }
