@@ -1029,8 +1029,8 @@ img {
   @media (min-width: 1150px) {
     .reviews__wrapper {
       display: grid;
-      grid-template-columns: 175px repeat(2, 1fr);
-      padding-top: 40px; } }
+      padding-top: 40px;
+      grid-template-columns: 175px repeat(2, 1fr); } }
 
 .reviews__title {
   font-weight: bold;
