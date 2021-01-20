@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
 
-
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -13,12 +12,14 @@
 
   background-color: inherit;
   border: 2px solid $text-color-black-light;
+
   transition: 0.2s;
 
   &:hover,
   &:focus {
-    background-color: $text-color-black-light;
     color: $text-color-white;
+
+    background-color: $text-color-black-light;
   }
 
   &:active {

@@ -1,18 +1,41 @@
 .burger {
   position: absolute;
-  top: 24px;
+  top: 23px;
   right: 26px;
 
-  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
+  height: 30px;
+  padding: 0;
 
   background-color: inherit;
-  background-image: url("../img/svg/menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.burger--close svg {
+  width: 20px;
+  height: 14px;
+}
+
+.burger--open svg {
+  width: 21px;
+  height: 21px;
+}
+
+.burger--open .burger__menu {
+  display: none;
+}
+
+.burger--close .burger__close {
+  display: none;
+}
+
+.burger--close .burger__menu {
+  display: block;
 }

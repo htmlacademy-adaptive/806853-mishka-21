@@ -68,7 +68,11 @@
           <img src="img/logo/logo-mobile.svg" alt="Логотип магазина вязанных вещей 'Мишка'">
         </picture>
       </a>
-      <button class="page-header__burger burger" type="button">
+      <button class="page-header__burger burger burger--open js-burger" type="button">
+        <svg class="burger__icon" aria-hidden="true" class="menu__icon" width="21" height="21">
+          <use class="burger__menu" href="img/svg/burger-sprite.svg#menu"></use>
+          <use class="burger__close" href="img/svg/burger-sprite.svg#close"></use>
+        </svg>
         <span class="visually-hidden">Открытие и закрытие навигационного меню</span>
       </button>
       <nav class="page-header__nav nav">
