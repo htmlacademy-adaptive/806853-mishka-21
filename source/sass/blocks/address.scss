@@ -156,16 +156,25 @@
 // map
 .address__map {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-  }
+  width: 100%;
+  height: 454px;
+  margin-bottom: 41px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
     grid-row: span 2;
     margin-bottom: 0;
+    width: 527px;
+    height: 457px;
+    margin: 0;
   }
+}
+
+// iframe
+.address__iframe {
+  width: 100%;
+  height: 463px;
+  border: none;
 }
 
 // icon
@@ -173,6 +182,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: -1;
   transform: translate(-50%, -50%);
 
   display: block;
@@ -184,19 +194,14 @@
 
 // img
 .address__img {
-  width: 100%;
-  height: 454px;
-  margin-bottom: 41px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
   background-color: $color-pattern;
 
   object-fit: cover;
-
-  @media (min-width: $desktop-width) {
-    width: 527px;
-    height: 457px;
-    margin: 0;
-  }
 }
 
 // button
