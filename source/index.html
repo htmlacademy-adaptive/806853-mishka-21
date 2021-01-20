@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -82,10 +84,14 @@
           <img src="img/logo/logo-mobile.svg" alt="Логотип магазина вязанных вещей 'Мишка'">
         </picture>
       </a>
-      <button class="page-header__burger burger" type="button">
+      <button class="page-header__burger burger burger--open js-burger" type="button">
+        <svg class="burger__icon" aria-hidden="true" class="menu__icon" width="21" height="21">
+          <use class="burger__menu" href="img/sprite.svg#menu"></use>
+          <use class="burger__close" href="img/sprite.svg#close"></use>
+        </svg>
         <span class="visually-hidden">Открытие и закрытие навигационного меню</span>
       </button>
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav nav js-nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -179,7 +185,7 @@
         </div>
 
         <p class="product__price">Цена: 990 руб.</p>
-        <a class="product__button button" href="">Заказать</a>
+        <a class="product__button button js-modal-open" href="">Заказать</a>
       </div>
     </section>
 
@@ -283,8 +289,8 @@
         </dl>
       </div>
       <div class="address__map">
-
         <a href="https://goo.gl/maps/2qJMCUXDiLdZpXZr9">
+          <iframe class="address__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1611079137759!5m2!1sru!2sru" aria-hidden="false" tabindex="0"></iframe>
           <span class="address__icon" aria-hidden="true"></span>
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x"
@@ -294,7 +300,7 @@
             <source srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1150px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
-            <img class="address__img" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 1x" height="454"
+            <img loading="lazy" class="address__img" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 1x" height="454"
               alt="Карта с опизанием проезда">
           </picture>
 
@@ -348,19 +354,21 @@
     </div>
   </footer>
 
-  <form class="modal-cart visually-hidden" action="https://echo.htmlacademy.ru">
-    <p class="modal-cart__tagline">Добавить в корзину</p>
-    <p class="modal-cart__size">Выберете размер:</p>
+  <div class="modal visually-hidden js-modal" role="dialog" aria-hidden="true" tabindex="-1">
+  <form class="modal-cart" action="https://echo.htmlacademy.ru">
+    <p class="modal-cart__tagline">Добавить<br> в корзину</p>
+    <p class="modal-cart__size">Выберите размер:</p>
     <div class="modal-cart__wrapper">
-      <input class="modal-cart__radio" id="S" name="size" type="radio">
+      <input required class="modal-cart__radio visually-hidden" id="S" name="Размер" value="S" type="radio" checked>
       <label class="modal-cart__label" for="S">S</label>
-      <input class="modal-cart__radio" id="M" name="size" type="radio">
+      <input class="modal-cart__radio visually-hidden" id="M" name="Размер" value="M" type="radio">
       <label class="modal-cart__label" for="M">M</label>
-      <input class="modal-cart__radio" id="L" name="size" type="radio">
+      <input class="modal-cart__radio visually-hidden" id="L" name="Размер" value="L" type="radio">
       <label class="modal-cart__label" for="L">L</label>
     </div>
     <button class="modal-cart__button button--submit button " type="submit">Добавить</button>
   </form>
+</div>
 </body>
-
+<script src="js/script.min.js"></script>
 </html>
