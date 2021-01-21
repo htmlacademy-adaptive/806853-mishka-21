@@ -166,7 +166,10 @@
 
   &:hover,
   &:focus {
-    color: $color-aquamarine;
+    svg {
+      fill: $color-aquamarine;
+    }
+
     opacity: 1;
   }
 

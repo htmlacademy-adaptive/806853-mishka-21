@@ -22,6 +22,10 @@
   color: $color-black;
   transition: 0.2s;
 
+  // svg {
+  //   border: 2px solid red;
+  //   color: red;
+  // }
   &:hover,
   &:focus {
     color: $color-aquamarine-medium;
