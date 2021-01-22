@@ -132,7 +132,9 @@ input[type="radio"].visually-hidden {
   background-size: contain;
 
   @media (min-width: $desktop-width) {
-    height: 34px;
-    bottom: -14px;
+    height: 25px;
+    bottom: -3px;
+    background-size: 108%;
+    background-position: 13px 0;
   }
 }

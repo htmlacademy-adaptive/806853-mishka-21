@@ -16,6 +16,10 @@
   line-height: 18px;
   color: $text-color-black;
   margin-right: 28px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 // img
