@@ -6,7 +6,7 @@
   display: grid;
   margin-bottom: 31px;
 
-  row-gap: 33px;
+  row-gap: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
@@ -50,7 +50,7 @@
 // img
 .catalog__img {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     height: 100%;
@@ -76,6 +76,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 33px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +90,7 @@
 
 // name
 .catalog__name-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
@@ -98,8 +99,12 @@
 
 .catalog__name {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   transition: 0.2s;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+  }
 
   a {
     text-decoration: none;
@@ -140,7 +145,9 @@
   border-top: 1px solid $color-grey-light;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 26px;
+    margin-top: auto;
+    margin-bottom: -3px;
   }
 }
 
